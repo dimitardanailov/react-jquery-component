@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { Subject } from 'rxjs';
 
-export default class ToggleButton extends Component {
+class ToggleButton extends Component {
 
 	constructor(props) {
 		super(props);
@@ -27,5 +27,7 @@ export default class ToggleButton extends Component {
 				</button>
 			</div>
 		);
-  }
+	}
 }
+
+export default ToggleButton;
