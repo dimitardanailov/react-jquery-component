@@ -19,3 +19,11 @@ npm run start
 - babel and react
 - eslint and react
 - kotatsu, webpack, babel and react
+
+## Visual studio code
+
+### Tools
+
+- [EditorConfig ](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+- [Flow](https://github.com/flowtype/flow-for-vscode)
+- [RxJS Snippets](https://marketplace.visualstudio.com/items?itemName=alan-vivona.rxjssnippets)
