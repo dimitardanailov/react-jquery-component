@@ -22,3 +22,11 @@ indent_size = 2
 [develop/**.js]
 indent_style = tab
 indent_size = 2
+
+[develop/**.jsx]
+indent_style = tab
+indent_size = 2
+
+[webpack.config.js]
+indent_style = tab
+indent_size = 4
