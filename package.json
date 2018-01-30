@@ -7,11 +7,11 @@
 		"build": "./node_modules/.bin/webpack",
 		"build:prod": "./node_modules/.bin/webpack -p",
 		"build:babel": "babel develop/ -d lib/",
-		"prepublish": "yarn run build:babel",
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"lint:dev": "eslint develop",
+		"lint:dev": "./node_modules/.bin/eslint ./develop/**.jsx",
 		"start": "kotatsu serve --port 4000 --presets latest,react ./develop/main.jsx",
-		"precommit": "lint-staged"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"prepublish": "yarn run build:babel",
+		"precommit": "./node_modules/.bin/lint-staged"
 	},
 	"keywords": [
 		"react",
@@ -30,6 +30,7 @@
 	"devDependencies": {
 		"babel-cli": "^6.26.0",
 		"babel-core": "^6.26.0",
+		"babel-eslint": "^8.2.1",
 		"babel-loader": "^7.1.2",
 		"babel-plugin-react-flow-props-to-prop-types": "^0.15.0",
 		"babel-preset-env": "^1.6.1",
@@ -38,13 +39,19 @@
 		"babel-preset-react": "^6.24.1",
 		"eslint": "^4.16.0",
 		"eslint-config-airbnb": "^16.1.0",
+		"eslint-config-prettier": "^2.9.0",
+		"eslint-plugin-babel": "^4.1.2",
+		"eslint-plugin-flowtype": "^2.42.0",
 		"eslint-plugin-import": "^2.8.0",
 		"eslint-plugin-jsx-a11y": "^6.0.3",
-		"eslint-plugin-react": "^7.6.0",
+		"eslint-plugin-prettier": "^2.5.0",
+		"eslint-plugin-react": "^7.6.1",
 		"flow-bin": "^0.64.0",
 		"husky": "^0.14.3",
 		"kotatsu": "^0.15.2",
 		"lint-staged": "^6.1.0",
+		"prettier": "^1.10.2",
+		"prettierrc": "^0.0.0-5",
 		"webpack": "^3.10.0"
 	},
 	"engines": {

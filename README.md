@@ -27,3 +27,4 @@ npm run start
 - [EditorConfig ](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 - [Flow](https://github.com/flowtype/flow-for-vscode)
 - [RxJS Snippets](https://marketplace.visualstudio.com/items?itemName=alan-vivona.rxjssnippets)
+- [Prettier](https://github.com/prettier/prettier-vscode)
