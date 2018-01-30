@@ -1,0 +1,16 @@
+[ignore]
+.*/__node_modules__/*
+
+[include]
+
+[libs]
+./flowtypes
+
+[lints]
+
+[options]
+suppress_type=$FlowIssue
+suppress_type=$FlowFixMe
+suppress_type=$FixMe
+
+[strict]

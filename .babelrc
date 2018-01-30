@@ -1,3 +1,6 @@
 {
-	"presets": ["env", "latest"]
+	"presets": ["env", "latest", "flow"],
+	"plugins": [
+		["react-flow-props-to-prop-types"]
+	]
 }
