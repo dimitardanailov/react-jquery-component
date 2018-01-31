@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- "8.9.1"
+cache:
+  directions:
+    - node_muless
+before_script:
+	- git diff --exit-code #make sure that yarn.lock didn't change
+script:
+#	- yarn runt lint
+
+	
