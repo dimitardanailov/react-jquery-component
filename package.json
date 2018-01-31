@@ -6,9 +6,9 @@
 	"scripts": {
 		"build": "./node_modules/.bin/webpack",
 		"build:prod": "./node_modules/.bin/webpack -p",
-		"build:babel": "babel develop/ -d lib/",
+		"build:babel": "./node_modules/.bin/babel develop/ -d lib/",
 		"lint:dev": "./node_modules/.bin/eslint ./develop/**.jsx",
-		"start": "kotatsu serve --port 4000 --presets latest,react ./develop/main.jsx",
+		"start": "./node_modules/.bin/kotatsu serve --port 4000 --presets latest,react ./develop/main.jsx",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"prepublish": "yarn run build:babel",
 		"precommit": "./node_modules/.bin/lint-staged"
