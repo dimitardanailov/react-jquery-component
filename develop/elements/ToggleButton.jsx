@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Subject } from 'rxjs';
 
 class ToggleButton extends Component {
-
 	constructor(props) {
 		super(props);
 
@@ -12,8 +11,8 @@ class ToggleButton extends Component {
 	}
 
 	componentDidMount() {
-		this.updateToggleProperty.subscribe((prevState) => {
-			this.setState(prevState => ({
+		this.updateToggleProperty.subscribe(prevState => {
+			this.setState(() => ({
 				isToggleOn: !prevState.isToggleOn
 			}));
 		});

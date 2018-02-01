@@ -1,67 +1,67 @@
 {
-		"extends": [
-			"eslint:recommended",
-			"airbnb",
-			"plugin:flowtype/recommended",
-    	"plugin:react/recommended",
-			"prettier",
-			"prettier/flowtype",
-			"prettier/react",
-			"prettier/standard"
-		],
-		"plugins": [
-			"babel",
-			"flowtype",
-			"prettier",
-			"react"
-		],
-		"env": {
-			"es6": true,
-			"browser": true
-		},
-		"parserOptions": {
-			"ecmaVersion": 2017,
-			"sourceType": "module",
-			"ecmaFeatures": {
-				"jsx": true,
-				"generators": true,
-				"experimentalObjectRestSpread": true
-			}
-		},
-		"rules": {
-			"no-bitwise": 0,
-			"no-nested-ternary": 0,
-			"no-sequences": 1,
-			"comma-dangle": 0,
-			"no-mixed-operators": 0,
-			"no-underscore-dangle": 0,
-			"no-restricted-properties": 0,
-			"no-plusplus": 0,
-			"no-unused-vars": [
-				"error",
-				{
-					"ignoreRestSiblings": true
-				}
-			],
-
-			"react/jsx-uses-react": "error",
-			"react/jsx-uses-vars": "error", 
-			
-			"prettier/prettier": [
-				"error",
-				{
-					"trailingComma": "es5",
-					"singleQuote": true
-				}
-			]
-		},
-		"settings": {
-			"react": {
-				"createClass": "createReactClass", 
-				"pragma": "React", 
-				"version": "16.2",
-				"flowVersion": "0.64"
-			},
-			"propWrapperFunctions": [ "forbidExtraProps" ]
+	"extends": [
+		"eslint:recommended",
+		"airbnb",
+		"plugin:flowtype/recommended",
+		"plugin:react/recommended",
+		"prettier",
+		"prettier/flowtype",
+		"prettier/react",
+		"prettier/standard"
+	],
+	"plugins": [
+		"babel",
+		"flowtype",
+		"prettier",
+		"react"
+	],
+	"env": {
+		"es6": true,
+		"browser": true
+	},
+	"parserOptions": {
+		"ecmaVersion": 2017,
+		"sourceType": "module",
+		"ecmaFeatures": {
+			"jsx": true,
+			"generators": true,
+			"experimentalObjectRestSpread": true
 		}
+	},
+	"rules": {
+		"no-bitwise": 0,
+		"no-nested-ternary": 0,
+		"no-sequences": 1,
+		"comma-dangle": 0,
+		"no-mixed-operators": 0,
+		"no-underscore-dangle": 0,
+		"no-restricted-properties": 0,
+		"no-plusplus": 0,
+		"no-unused-vars": [
+			"error",
+			{
+				"ignoreRestSiblings": true
+			}
+		],
+		"react/jsx-uses-react": "error",
+		"react/jsx-uses-vars": "error",
+		"prettier/prettier": [
+			"error",
+			{
+				"trailingComma": "none",
+				"singleQuote": true
+			}
+		]
+	},
+	"settings": {
+		"react": {
+			"createClass": "createReactClass",
+			"pragma": "React",
+			"version": "16.2",
+			"flowVersion": "0.64"
+		},
+		"propWrapperFunctions": [
+			"forbidExtraProps"
+		]
+	}
 }

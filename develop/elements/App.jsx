@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ToggleButton from './ToggleButton.jsx';
 import ToDoList from './ToDoList.jsx';
 
-export default class App extends Component {
+class App extends Component {
 	render() {
 		return (
 			<div>
@@ -18,3 +18,5 @@ export default class App extends Component {
 		);
 	}
 }
+
+export default App;

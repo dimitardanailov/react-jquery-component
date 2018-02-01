@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Subject } from 'rxjs';
 
 class ToDoList extends React.Component {
-
 	constructor(props) {
 		super(props);
 
