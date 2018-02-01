@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { Subject } from 'rxjs';
 
 class ToDoList extends React.Component {
@@ -31,21 +31,21 @@ class ToDoList extends React.Component {
 	}
 
 	render() {
-    return (
+		return (
 			<div>
 				<form onSubmit={() => this.addTodo.next()} action="javascript:">
-					<input value={this.state.text} onChange={(e) => this.currentInput.next(e.target.value)}/>
+					<input value={this.state.text} onChange={(e) => this.currentInput.next(e.target.value)} />
 					<button type="submit">Add</button>
 				</form>
-				
+
 				<ul>
-					{ this.state.todos.map( (todo, index) => (
-          	<li key={index}>{todo.text}</li>
-					)) }
+					{this.state.todos.map((todo, index) => (
+						<li key={index}>{todo.text}</li>
+					))}
 				</ul>
 			</div>
 		);
-  }
+	}
 }
 
 export default ToDoList;

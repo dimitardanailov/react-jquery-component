@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { Subject } from 'rxjs';
 
 class ToggleButton extends Component {
@@ -19,11 +19,11 @@ class ToggleButton extends Component {
 		});
 	}
 
-  render() {
-    return (
+	render() {
+		return (
 			<div>
 				<button onClick={() => this.updateToggleProperty.next(this.state.isToggleOn)}>
-					{this.state.isToggleOn ? 'ON': 'OFF'}
+					{this.state.isToggleOn ? 'ON' : 'OFF'}
 				</button>
 			</div>
 		);
