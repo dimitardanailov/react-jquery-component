@@ -13,7 +13,7 @@ class ToggleButton extends Component {
 	componentDidMount() {
 		this.updateToggleProperty.subscribe(prevState => {
 			this.setState(() => ({
-				isToggleOn: !prevState.isToggleOn
+				isToggleOn: !prevState
 			}));
 		});
 	}
