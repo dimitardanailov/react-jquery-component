@@ -15,14 +15,15 @@ class ToDoList extends React.Component {
 	}
 
 	componentDidMount() {
-		this.currentInput.subscribe((newValue) => {
+		this.currentInput.subscribe(newValue => {
 			this.setState(() => ({
 				text: newValue
 			}));
 		});
 
 		this.addTodo.subscribe(() => {
-			let { todos, text } = this.state;
+			let { todos } = this.state;
+			const { text } = this.state;
 			todos = todos.concat({ text });
 
 			this.setState({ todos, text: '' });
