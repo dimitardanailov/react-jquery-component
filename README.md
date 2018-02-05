@@ -5,10 +5,17 @@
 To get a reloadable env, with boilerplate component, clone this project and
 
 ```shell
-npm install
-npm run start
-# open browser at localhost:4000
+yarn install
+yarn start
 ```
+
+Next, we'll start the debugger and run it locally.
+
+Open [http://localhost:4000](http://localhost:8000) in any browser and launch Firefox or Chrome. You should now be able to select a tab to debug.
+
+__Why Yarn and not NPM?__
+
+We like [Yarn]() because it makes sure everyone is using the same library versions.
 
 ## What is not completed ?
 
@@ -19,12 +26,3 @@ npm run start
 - babel and react
 - eslint and react
 - kotatsu, webpack, babel and react
-
-## Visual studio code
-
-### Tools
-
-- [EditorConfig ](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
-- [Flow](https://github.com/flowtype/flow-for-vscode)
-- [RxJS Snippets](https://marketplace.visualstudio.com/items?itemName=alan-vivona.rxjssnippets)
-- [Prettier](https://github.com/prettier/prettier-vscode)
