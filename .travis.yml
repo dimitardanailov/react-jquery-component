@@ -1,2 +1,23 @@
 language: node_js
-node_js: '8'
+node_js: "8"
+
+cache:
+	- yarn
+
+env:
+  global:
+    - DISPLAY=':99.0'
+    - YARN_VERSION='0.24.5'
+
+notifications:
+  slack:
+    on_success: never
+    on_failure: always
+
+install:
+  - . $HOME/.nvm/nvm.sh; nvm install stable; nvm use stable
+  - ./bin/ci/install-yarn
+  - yarn
+
+script:
+  - node --version
