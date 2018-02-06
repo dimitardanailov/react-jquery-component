@@ -17,6 +17,10 @@ __Why Yarn and not NPM?__
 
 We like [Yarn]() because it makes sure everyone is using the same library versions.
 
+## Tasks
+
+`yarn lint:jsx` - Lint javascript files
+
 ## What is not completed ?
 
 - Unit tests
