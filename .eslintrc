@@ -57,7 +57,7 @@
 			}
 		],
 		// Don't limit the number of parameters that can be used in a function.
-		"max-params": 7,
+		"max-params": 0,
 		// Disallow empty statements. This will report an error for:
 		// try { something(); } catch (e) {}
 		// but will not report it for:
