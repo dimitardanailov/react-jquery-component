@@ -34,7 +34,9 @@ class ToDoList extends React.Component {
 		return (
 			<div>
 				<form onSubmit={() => this.addTodo.next()} action="javascript:">
-					<input value={this.state.text} onChange={(e) => this.currentInput.next(e.target.value)} />
+					<input
+						value={this.state.text}
+						onChange={(e) => this.currentInput.next(e.target.value)} />
 					<button type="submit">Add</button>
 				</form>
 

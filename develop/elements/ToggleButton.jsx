@@ -7,21 +7,25 @@ class ToggleButton extends Component {
 
 		this.state = { isToggleOn: true };
 
-		this.updateToggleProperty = new Subject();
+		this.setToggle = new Subject();
 	}
 
 	componentDidMount() {
-		this.updateToggleProperty.subscribe(prevState => {
+		this.setToggle.subscribe(prevState => {
 			this.setState(() => ({
 				isToggleOn: !prevState
 			}));
 		});
 	}
 
+	getToogle() {
+		return this.state.isToggleOn;
+	}
+
 	render() {
 		return (
 			<div>
-				<button onClick={() => this.updateToggleProperty.next(this.state.isToggleOn)}>
+				<button onClick={() => this.setToggle.next(this.getToogle())}>
 					{this.state.isToggleOn ? 'ON' : 'OFF'}
 				</button>
 			</div>

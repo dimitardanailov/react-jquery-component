@@ -6,14 +6,16 @@ class App extends Component {
 	render() {
 		return (
 			<div>
-				<p>
-					Application has two subcomponents.<br />
-					These components demonstrate reactive programming advantages.
-				</p>
-
-				<ToggleButton />
-
-				<ToDoList />
+				<ul>
+					<li>
+						{'These components demonstrate reactive programming advantages.'}
+					</li>
+					<li>Application has two subcomponents.</li>
+				</ul>
+				<section>
+					<ToggleButton />
+					<ToDoList />
+				</section>
 			</div>
 		);
 	}
