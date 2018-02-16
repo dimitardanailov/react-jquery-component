@@ -26,7 +26,11 @@ class ToDoList extends React.Component {
 
 			let { todos } = this.state;
 			const { text } = this.state;
-			todos = todos.concat({ text });
+			const index = todos.length + 1;
+			todos = todos.concat({
+				text,
+				index
+			});
 
 			this.setState({ todos, text: '' });
 		});
@@ -38,14 +42,13 @@ class ToDoList extends React.Component {
 				<form onSubmit={e => this.addTodo.next(e)}>
 					<input
 						value={this.state.text}
-						onChange={(e) => this.currentInput.next(e.target.value)} />
+						onChange={e => this.currentInput.next(e.target.value)}
+					/>
 					<button type="submit">Add</button>
 				</form>
 
 				<ul>
-					{this.state.todos.map((todo, index) => (
-						<li key={index}>{todo.text}</li>
-					))}
+					{this.state.todos.map(task => <li key={task.index}>{task.text}</li>)}
 				</ul>
 			</div>
 		);
