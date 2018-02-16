@@ -21,7 +21,9 @@ class ToDoList extends React.Component {
 			}));
 		});
 
-		this.addTodo.subscribe(() => {
+		this.addTodo.subscribe(event => {
+			event.preventDefault();
+
 			let { todos } = this.state;
 			const { text } = this.state;
 			todos = todos.concat({ text });
@@ -33,7 +35,7 @@ class ToDoList extends React.Component {
 	render() {
 		return (
 			<div>
-				<form onSubmit={() => this.addTodo.next()} action="javascript:">
+				<form onSubmit={e => this.addTodo.next(e)}>
 					<input
 						value={this.state.text}
 						onChange={(e) => this.currentInput.next(e.target.value)} />
