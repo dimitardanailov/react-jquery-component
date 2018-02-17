@@ -1,6 +1,6 @@
 import React from 'react';
 import { render } from 'react-dom';
-import App from './elements/App.jsx';
+import App from './elements/App';
 
 const mountNode = document.getElementById('app');
 
