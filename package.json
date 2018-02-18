@@ -9,7 +9,7 @@
 		"build:babel": "./node_modules/.bin/babel develop/ -d lib/",
 		"lint:js": "./node_modules/.bin/eslint --ext .js develop/",
 		"start": "./node_modules/.bin/kotatsu serve --port 4000 --presets latest,react ./develop/main.js",
-		"test": "echo \"Error: no test specified\" && exit 1",
+		"test": "./node_modules/.bin/jest",
 		"prepublish": "yarn run build:babel",
 		"precommit": "./node_modules/.bin/lint-staged"
 	},
@@ -21,10 +21,15 @@
 	"author": "Dimitar Danailov <dimityr.danailov@gmail.com>",
 	"license": "MIT",
 	"dependencies": {
+		"babel-jest": "^22.2.2",
+		"jest": "^22.3.0",
 		"prop-types": "^15.6.0",
 		"prop-types-extra": "^1.0.1",
 		"react": "^16.2.0",
 		"react-dom": "^16.2.0",
+		"react-test-renderer": "^16.2.0",
+		"remark-cli": "^5.0.0",
+		"remark-lint": "^6.0.1",
 		"rxjs": "^5.5.6"
 	},
 	"devDependencies": {
