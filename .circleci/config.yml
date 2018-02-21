@@ -14,13 +14,9 @@ jobs:
     steps:
       - checkout
 
-      - run: 
-        name: Install node packages
-        command: yarn install
+      - run: yarn install
 
-      - run: 
-        name: Jest test
-        command: yarn test
+      - run: yarn test
 
       - save_cache:
           paths:
