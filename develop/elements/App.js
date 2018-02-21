@@ -1,5 +1,5 @@
 import React from 'react';
-import ToggleButton from './ToggleButton';
+import ToggleButton from './ToggleButton/ToggleButton';
 import ToDoList from './ToDoList';
 
 /**
