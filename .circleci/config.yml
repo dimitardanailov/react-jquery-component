@@ -14,10 +14,12 @@ jobs:
     steps:
       - checkout
 
-      - run: yarn install
+      - run: 
+        name: Install node packages
+        command: yarn install
 
       - run: 
-        name: "Jest test"
+        name: Jest test
         command: yarn test
 
       - save_cache:
