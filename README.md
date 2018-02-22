@@ -19,14 +19,12 @@ We like [Yarn]() because it makes sure everyone is using the same library versio
 
 ## Tasks
 
-`yarn lint:jsx` - Lint javascript files
+`yarn lint:js` - Lint javascript files
+
+`yarn test` - Execute Unit tests
 
 ## What is not completed ?
 
-- Unit tests
-- prereact
-- husky and lint-staged
 - webpack 3 and react
-- babel and react
-- eslint and react
-- kotatsu, webpack, babel and react
+- Travic CI
+- Circle CI
