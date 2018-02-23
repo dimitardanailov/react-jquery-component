@@ -1,6 +1,6 @@
 import React from 'react';
 import ToggleButton from './ToggleButton/ToggleButton';
-import ToDoList from './ToDoList';
+import ToDoList from './ToDoList/ToDoList';
 
 /**
  * Article: React Stateless Functional Components:
