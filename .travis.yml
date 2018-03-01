@@ -1,8 +1,15 @@
 language: node_js
-node_js: "8"
 
+# test on two node.js versions: 0.6 and 0.8
+node_js:
+  - 0.6
+  - 0.8
+
+# https://blog.travis-ci.com/2016-11-21-travis-ci-now-supports-yarn
 cache:
-  - yarn
+  yarn: true
+  directories:
+    - node_modules
 
 env:
   global:
