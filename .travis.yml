@@ -2,7 +2,6 @@ language: node_js
 
 # test on two node.js versions: 0.6 and 0.8
 node_js:
-  - 0.6
   - 0.8
 
 # https://yarnpkg.com/lang/en/docs/install-ci/
@@ -32,6 +31,7 @@ notifications:
 install:
   - . $HOME/.nvm/nvm.sh; nvm install stable; nvm use stable
   - yarn
+	- yarn test
 
 script:
   - node --version
