@@ -18,9 +18,7 @@ jobs:
         name: Install dependencies
         command: yarn install
       
-      - run: 
-        name: Testing application
-        command: yarn test
+      - run: yarn test
       
       - save_cache:
           paths:
