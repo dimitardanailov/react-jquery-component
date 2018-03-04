@@ -16,12 +16,17 @@ jobs:
 
       - run: yarn install
 
-      - run: 
-        name: "JavaScript Test Suite"
-        command: yarn jest
-        - store_test_results:
+      # Setup steps omitted
+      # https://www.viget.com/articles/using-junit-on-circleci-2-0-with-jest-and-eslint/
+      - run:
+          name: "JavaScript Test Suite"
+          # yarn here makes sure we are using the local jest binary
+          command: yarn jest
+          environment:
+            JEST_JUNIT_OUTPUT: "reports/junit/js-test-results.xml"
+      - store_test_results:
           path: reports/junit
-        - store_artifacts:
+      - store_artifacts:
           path: reports/junit
 
       - save_cache:
