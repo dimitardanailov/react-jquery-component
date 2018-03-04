@@ -11,6 +11,11 @@ jobs:
 
     working_directory: ~/develop
 
+    environment:
+      YARN_PATH: "$HOME/.yarn"
+      YARN_VERSION: 1.3.2
+      PATH: "${PATH}:${HOME}/.yarn/bin:${HOME}/${CIRCLE_PROJECT_REPONAME}/node_modules/.bin"
+
     steps:
       - checkout
 
