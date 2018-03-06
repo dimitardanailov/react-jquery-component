@@ -3,21 +3,21 @@ const path = require('path');
 module.exports = {
 	context: path.resolve(__dirname, 'develop'),
 	entry: {
-		app: './main.jsx'
+		app: './main.js'
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
 		filename: './assets/js/[name].bundle.js',
-	}, 
+	},
 	module: {
 		rules: [
 			{
-				test: /\.jsx$/,
+				test: /\.js$/,
 				exclude: /(node_modules|bower_components)/,
 				use: {
 					loader: 'babel-loader??cacheDirectory=true',
 					options: {
-						presets: ['latest', 'env', 'react']
+						presets: ['env', 'flow', 'latest', 'react']
 					}
 				}
 			}

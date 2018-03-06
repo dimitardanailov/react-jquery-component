@@ -16,5 +16,3 @@ test('ToDoList has two kids', () => {
 
 	expect(tree.children).toHaveLength(2);
 });
-
-

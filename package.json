@@ -7,6 +7,7 @@
 		"build": "./node_modules/.bin/webpack",
 		"build:prod": "./node_modules/.bin/webpack -p",
 		"build:babel": "./node_modules/.bin/babel develop/ -d lib/",
+		"flow": "./node_modules/.bin/flow",
 		"lint:js": "./node_modules/.bin/eslint --ext .js develop/",
 		"start": "./node_modules/.bin/kotatsu serve --port 4000 --presets latest,react ./develop/main.js",
 		"test": "./node_modules/.bin/jest",
@@ -60,11 +61,15 @@
 		"prettierrc": "^0.0.0-5",
 		"webpack": "^3.10.0"
 	},
+	"engineStrict": true,
 	"engines": {
 		"node": ">=8.9.1",
 		"npm": ">=5.5.1"
 	},
 	"lint-staged": {
-		"*.js": []
+		"develop/*.js": [
+			"prettier",
+			"git add"
+		]
 	}
 }
