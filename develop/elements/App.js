@@ -1,6 +1,7 @@
 import React from 'react';
 import ToggleButton from './ToggleButton/ToggleButton';
 import ToDoList from './ToDoList/ToDoList';
+import JqueryComponent from './JqueryComponent/JqueryComponent';
 
 /**
  * Article: React Stateless Functional Components:
@@ -16,7 +17,14 @@ function App() {
 				<li>Application has two subcomponents.</li>
 			</ul>
 			<section>
-				<ToggleButton />
+				<section>
+					Rxjs:
+					<ToggleButton />
+				</section>
+				<section>
+					jQuery:
+					<JqueryComponent />
+				</section>
 				<ToDoList />
 			</section>
 		</div>
